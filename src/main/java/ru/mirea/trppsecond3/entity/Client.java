@@ -1,4 +1,4 @@
-package ru.mirea.trpp_second_3.entity;
+package ru.mirea.trppsecond3.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.opencsv.bean.CsvBindByName;
@@ -37,4 +37,7 @@ public class Client {
     @CsvBindByName(column = "phone")
     private String phone;
 
+    public Object getId() {
+        return id;
+    }
 }
